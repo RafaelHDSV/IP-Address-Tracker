@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* font-family: "Rubik", sans-serif; */
+
+:root {
+	--black: hsl(0, 0%, 3%);
+	--dark_gray: hsl(0, 0%, 17%);
+	--gray: hsl(0, 0%, 59%);
+	--white: hsl(0, 100%, 99%);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Rubik', sans-serif;
+	font-size: 18px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url('images/pattern-bg-desktop.png');
+	background-size: cover;
+	height: 40%;
+	padding: 1.5rem 0 0 0;
+	gap: 1.5rem;
+}
+
+header h1 {
+	font-size: 25px;
+	font-weight: 500;
+	color: var(--white);
+}
+
+header .input {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+header .input #ip_input {
+	outline: 0;
+	border: none;
+	border-radius: 0.5rem 0rem 0rem 0.5rem;
+	padding: 1rem;
+	max-width: 27rem;
+	width: 100vw;
+	max-height: 3.5rem;
+	height: 100vh;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+header .input img {
+	outline: 0;
+	border: none;
+	border-radius: 0rem 0.5rem 0.5rem 0rem;
+	padding: 1.3rem;
+	max-width: 3.5rem;
+	width: 100vw;
+	max-height: 3.5rem;
+	height: 100vh;
+	background-color: var(--black);
+	cursor: pointer;
+}
+
+header .input img:hover {
+	opacity: 0.8;
+}
+
+.info_ip {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 55rem;
+	width: 100%;
+	background-color: var(--white);
+	margin: 0.3rem 0 0 0;
+	padding: 3rem 2rem;
+	border-radius: 1rem;
+	z-index: 1;
+}
+
+.info_ip div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.3rem;
+}
+
+.info_ip h2 {
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: var(--gray);
+}
+
+.info_ip p {
+	color: var(--dark_gray);
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.map {
+	max-width: 100vw;
+	width: 100%;
+	max-height: 100vh;
+	height: 59.2%;
+}
+
+.map iframe {
+	width: 100%;
+	height: 100%;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.3rem;
+	background-color: var(--black);
+	position: relative;
+}
+
+footer a,
+footer p {
+	font-size: 11px;
+	font-weight: 300;
+	text-decoration: none;
+	color: var(--gray);
+	transition: 1s all ease-in-out;
+}
+
+footer a:hover {
+	font-size: 35px;
+	color: var(--white);
+	cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+	header .input {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	header .input #ip_input {
+		outline: 0;
+		border: none;
+		border-radius: 0.5rem 0rem 0rem 0.5rem;
+		padding: 1rem;
+		max-width: 27rem;
+		width: 100%;
+		max-height: 3.5rem;
+		height: 100vh;
+		font-size: 16px;
+		cursor: pointer;
+	}
+
+	header .input img {
+		outline: 0;
+		border: none;
+		border-radius: 0rem 0.5rem 0.5rem 0rem;
+		padding: 1.3rem;
+		max-width: 3.5rem;
+		width: 100vw;
+		max-height: 3.5rem;
+		height: 100vh;
+		background-color: var(--black);
+		cursor: pointer;
+	}
+
+	.info_ip {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: 15rem;
+		width: 100%;
+		margin: 0;
+		padding: 1rem;
+		gap: 2rem;
+	}
+
+	.info_ip div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5rem;
+	}
+}

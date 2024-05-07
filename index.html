@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Rafael Henrique de Sousa Vieira" />
+		<meta name="keywords" content="programação, html, css, javascript, frontend mentor" />
+		<meta name="robots" content="index, follow" />
+		<meta
+			name="description"
+			content="This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve your coding skills by building realistic projects." />
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+		<title>Frontend Mentor | IP Address Tracker</title>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>IP Address Tracker</h1>
+
+			<div class="input">
+				<input
+					id="ip_input"
+					type="text"
+					placeholder="Search for any IP address or domain"
+					autocomplete="off" />
+
+				<img src="images/icon-arrow.svg" alt="icon-arrow.svg" onclick="API()" />
+			</div>
+
+			<div class="info_ip">
+				<div>
+					<h2>IP Address</h2>
+					<p id="ip_address">189.111.8.69</p>
+				</div>
+
+				<div>
+					<h2>Location</h2>
+					<p id="location">Sorocaba</p>
+				</div>
+				<div>
+					<h2>Timezone</h2>
+					<p id="time_zone">America/Sao_Paulo</p>
+				</div>
+				<div>
+					<h2>ISP</h2>
+					<p id="isp">Vivo</p>
+				</div>
+			</div>
+		</header>
+
+		<div class="map">
+			<iframe id="gmaps" src="https://www.google.com/maps?q=100,100&output=embed" frameborder="0"></iframe>
+		</div>
+
+		<footer>
+			<p>
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			</p>
+			<p>
+				Coded by
+				<a href="https://github.com/RafaelHDSV" target="_blank">Rafael Henrique de Sousa Vieira</a>.
+			</p>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
