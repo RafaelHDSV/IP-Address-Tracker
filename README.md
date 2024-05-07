@@ -4,7 +4,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/IP-Address-Tracker?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/RafaelHDSV/IP-Address-Tracker?style=for-the-badge)
 
-<img src="desktop.png" alt="desktop.png">
+<img src="images/desktop.png" alt="desktop.png">
 
 > This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -37,11 +37,11 @@ Users should be able to:
 
 -    Desktop
 
-     ![](desktop.png)
+     ![](images/desktop.png)
 
 -    Mobile
 
-     <img src="mobile.png" alt="mobile.png" width="300px" height="700px">
+     <img src="images/mobile.png" alt="mobile.png" width="300px" height="700px">
 
 ## My process
 
