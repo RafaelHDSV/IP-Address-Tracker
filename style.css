@@ -208,7 +208,8 @@ footer a:hover {
 footer #va-visits {
   margin: 0.25rem 0 0;
   padding: 0;
-  font-size: inherit;
-  color: inherit;
+  font-size: 11px;
+  font-weight: 300;
+  color: var(--gray);
   background: transparent;
 }
